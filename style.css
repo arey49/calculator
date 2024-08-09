@@ -15,9 +15,10 @@ body {
     width: 400px;
     background-color: black;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 25px;
     border-radius: 30px;
+    gap: 10px;
 }
 
 .screen {
@@ -33,9 +34,12 @@ body {
     box-sizing: border-box;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    margin-bottom: 5px;
 
+}
 
+.buttons-div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -50,7 +54,7 @@ body {
 }
 
 .operator-button {
-    background-color: lightpink;
+    background-color: rgb(255, 182, 193);
 }
 
 .operand-button {

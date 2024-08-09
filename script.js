@@ -32,3 +32,6 @@ function operate(operand1, operator, operand2) {
 let operand1;
 let operand2;
 let operator;
+
+const screen = document.querySelector(".screen");
+const buttonsDiv = document.querySelector(".buttons-div")
