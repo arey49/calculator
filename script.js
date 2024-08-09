@@ -76,7 +76,7 @@ function displayOnScreen(number) {
         screen.textContent = number;
         return;
     }
-    screen.textContent = +number.toFixed(8);
+    screen.textContent = +number.toFixed(20);
 }
 
 function selectOperator(button) {
@@ -93,8 +93,8 @@ function addDigitToDisplay(button) {
         }
         return;
     }
-    
-    if (ghostContent) {
+
+    if (ghostContent || screen.textContent == "0") {
         screen.textContent = button.textContent;
     } else {
         screen.textContent += button.textContent;
@@ -110,7 +110,7 @@ function getNumberFromScreen() {
 }
 
 function unselectAllOperators() {
-    const operators = document.querySelectorAll(".operator-button");
+    const operators = buttonsDiv.querySelectorAll(".operator-button");
     operators.forEach(button => button.style.filter = "opacity(100%)");
 }
 
@@ -143,7 +143,6 @@ function performOperation() {
 
         default:
             break;
-
     }
 
     return result;
