@@ -49,6 +49,10 @@ body {
     width: 25%;
 }
 
+.button:active {
+    filter: opacity(75%);
+}
+
 .options-button {
     background-color: rgb(147, 255, 219);
 }
