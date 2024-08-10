@@ -85,6 +85,7 @@ function selectOperator(button) {
 }
 
 function addDigitToDisplay(button) {
+    if (screen.textContent.length > 7) return;
     if (button.id == "point-button") {
         if (ghostContent) {
             screen.textContent = "0.";
