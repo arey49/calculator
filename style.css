@@ -27,7 +27,7 @@ body {
     align-items: end;
     aspect-ratio: 4/1;
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     background-color: lightgray;
     border: 3px black solid;
     font-size: 70px;

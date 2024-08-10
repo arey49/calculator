@@ -76,7 +76,7 @@ function displayOnScreen(number) {
         screen.textContent = number;
         return;
     }
-    screen.textContent = +number.toFixed(20);
+    screen.textContent = +number.toFixed(6);
 }
 
 function selectOperator(button) {
@@ -87,7 +87,7 @@ function selectOperator(button) {
 function addDigitToDisplay(button) {
     if (button.id == "point-button") {
         if (ghostContent) {
-            screen.textContent = "0.1";
+            screen.textContent = "0.";
         } else if (!screen.textContent.includes(".")) {
             screen.textContent += ".";
         }
